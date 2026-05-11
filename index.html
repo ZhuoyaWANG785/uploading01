@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <base href="./">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的 GitHub Pages 页面</title>
-  <!-- 这里可以加你的CSS，先写个测试样式 -->
-  <style>
-    body {
-      background: #f5f5f5;
-      text-align: center;
-      padding-top: 100px;
-      font-size: 24px;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小白心情 - 个人博客</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🎉 页面终于显示了！</h1>
-  <p>GitHub Pages 配置成功 ✅</p>
+    <header>
+        <nav>
+            <div class="logo">小白心情</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="articles.html">文章</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>欢迎来到我的博客</h1>
+            <p>记录生活，分享感悟</p>
+        </section>
+
+        <section class="latest-articles">
+            <h2>最新文章</h2>
+            <div class="article-grid">
+                <article class="article-card">
+                    <h3><a href="articles/first-article.html">我的第一篇博客</a></h3>
+                    <p class="article-date">2026年5月11日</p>
+                    <p class="article-excerpt">这是我的第一篇博客文章，记录了我创建这个博客网站的过程和心情...</p>
+                    <a href="articles/first-article.html" class="read-more">阅读更多</a>
+                </article>
+                <article class="article-card">
+                    <h3><a href="articles/second-article.html">学习编程的第一周</a></h3>
+                    <p class="article-date">2026年5月10日</p>
+                    <p class="article-excerpt">开始学习编程的第一周，遇到了很多挑战，但也收获了很多...</p>
+                    <a href="articles/second-article.html" class="read-more">阅读更多</a>
+                </article>
+                <article class="article-card">
+                    <h3><a href="articles/third-article.html">周末生活</a></h3>
+                    <p class="article-date">2026年5月9日</p>
+                    <p class="article-excerpt">这个周末我做了一些有趣的事情，让我来分享一下...</p>
+                    <a href="articles/third-article.html" class="read-more">阅读更多</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 小白心情. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
